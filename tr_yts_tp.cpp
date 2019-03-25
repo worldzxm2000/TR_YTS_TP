@@ -33,10 +33,12 @@ int GetPort()
 //解析数据
 LRESULT Char2Json(QString &buff, QJsonObject &json)
 {
-	int Count = 0;//数据个数
-	int Current_P = buff.length();//当前数据指
+	//数据个数
+	int Count = 0;
+	//当前数据指
+	int Current_P = buff.length();
 
-								  //遍历查找数据
+	//遍历查找数据
 	for (int i = 0; i < buff.length(); i++)
 	{
 		//帧头 aa
